@@ -35,7 +35,7 @@
                 <table class="table table-striped table-hover">
                     <tbody>
                         <tr>
-                            <th>Sr.No</th>
+                            <th>Sr. No.</th>
                             <th>Student Name</th>
                             <th>Roll Number</th>
                             <th>Subject Name</th>
@@ -72,6 +72,7 @@ FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

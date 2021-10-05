@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    <center>
+        <br>
+        <h1>Fill your Data</h1>
+        <hr>
+    </center>
 	<form action="" method="post">
         <label>
             <input type="text" class="input" name="name" placeholder="ENTER YOUR FULl NAME">
@@ -47,7 +52,7 @@
 			$insert = mysqli_query($db,"INSERT INTO std_info (std_name, std_roll_number ,std_section) VALUES ('$fname','$rNumber','$section')");
 
 			if(!$insert){
-				echo mysqli_error();
+				echo ("Error occured during inserting data: ".$mysqli->error());
 			}else{
 				echo "Records added successfully.";
 			}
