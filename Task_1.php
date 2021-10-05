@@ -52,7 +52,7 @@
 			$insert = mysqli_query($db,"INSERT INTO std_info (std_name, std_roll_number ,std_section) VALUES ('$fname','$rNumber','$section')");
 
 			if(!$insert){
-				echo ("Error occured during inserting data: ".$mysqli->error());
+				echo ("Error occured during inserting data: ".$db->error());
 			}else{
 				echo "Records added successfully.";
 			}
