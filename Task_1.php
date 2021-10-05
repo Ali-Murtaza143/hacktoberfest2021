@@ -14,20 +14,20 @@
     <center>
         <br>
         <h1>Fill your Data</h1>
-        <hr>
+        <hr>  </hr>
     </center>
 
 	<form action="" method="post"> // Using the POST method here, instead of GET method.
 
         <label>
-            <input type="text" class="input" name="name" placeholder="ENTER YOUR FULl NAME">
+            <input type="text" class="input" name="fname" placeholder="ENTER YOUR FULl NAME">
             <div class="line-box">
                 <div class="line"></div>
             </div>
         </label>
         <label>
 
-            <input type="text" class="input" name="rollNumber" placeholder="ENTER YOUR ROLL NUMBER">
+            <input type="text" class="input" name="rNumber" placeholder="ENTER YOUR ROLL NUMBER">
             <div class="line-box">
                 <div class="line"></div>
             </div>
@@ -57,8 +57,8 @@
 			if(!$insert){
 				echo ("Error occured during inserting data: ".$db->error());
 			}else{
-				echo "Records have been added successfully."; // printing the records being successfully addeed.
-				echo "Successfully done.";
+	
+				echo "Successfully done.";// printing the records being successfully addeed.
 				
 			}
         }
