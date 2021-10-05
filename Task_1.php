@@ -20,26 +20,26 @@
 	<form action="" method="post"> // Using the POST method here, instead of GET method.
 
         <label>
-            <input type="text" class="input" name="fname" placeholder="ENTER YOUR FULl NAME">
+            <input type="text" class="input" name="fname" placeholder="ENTER YOUR FULL NAME">
             <div class="line-box">
                 <div class="line"></div>
             </div>
         </label>
         <label>
 
-            <input type="text" class="input" name="rNumber" placeholder="ENTER YOUR ROLL NUMBER">
+            <input type="text" class="input" name="rNumber" placeholder="ENTER YOUR ROLL no">
             <div class="line-box">
                 <div class="line"></div>
             </div>
         </label>
         <label>
 
-            <input type="text" class="input" name="section" placeholder="ENTER YOUR SECTION">
+            <input type="text" class="input" name="section" placeholder="ENTER SECTION">
             <div class="line-box">
                 <div class="line"></div>
             </div>
         </label>
-        <button type="submit" name="submit" value="submit">SUBMIT YOUR DATA</button>
+        <button type="submit" name="button" value="submit">SUBMIT YOUR DATA</button>
     </form>
 	
     <?php
