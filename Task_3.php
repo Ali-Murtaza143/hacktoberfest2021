@@ -13,9 +13,13 @@
 	<body>
 		<style>
 			body{
+
+			
+
 				margin-top:60px; // changing the margins top
 				background:lightblue; // changing the color.
 				color:lime; // lime color is added.
+
 			}
 			
 			card card-primary mb-2{
@@ -23,7 +27,12 @@
 			}
 		</style>
 		
-		<div class="container-fluid"> <h1>Student Details</h1>
+		<div class="container-fluid"> 
+			<center>
+				<h1>Student Details</h1>
+				<hr>
+			</center>
+			<br>
 			<div class="row">
 				<div class="col-8">	
                    
@@ -39,9 +48,9 @@
 				<table class="table table-striped table-hover">
 					<tbody>
 						<tr>
-							<th>Sr.No</th>
+							<th>Sr. No.</th>
 							<th>Name</th>
-							<th>Roll No</th>
+							<th>Roll No.</th>
 							<th>Section</th>
 						</tr> 
 						
@@ -77,5 +86,6 @@
 				</div>
 			</div>
 		</div>
+		
 	</body>
 </html>
