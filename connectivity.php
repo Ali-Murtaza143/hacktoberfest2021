@@ -1,8 +1,8 @@
 <?php  
-    $db = mysqli_connect("localhost","root","","DatabaseName");
+    $con = mysqli_connect("localhost","root","","DatabaseName");
 
     if(!$db)
     {
-        die("Connection failed: " . mysqli_connect_error());
+        die("Connection / database error " . mysqli_connect_error());
     }
 ?> 
