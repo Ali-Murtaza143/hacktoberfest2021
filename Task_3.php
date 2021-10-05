@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Student Portal</title>
+		<title>Student Portal by Computer Systems Engineering students of batch 18</title>
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -13,13 +13,17 @@
 	<body>
 		<style>
 			body{
-				margin-top:35px;
-				background:aliceblue;
-				color:lime;
+
+			
+
+				margin-top:60px; // changing the margins top
+				background:lightblue; // changing the color.
+				color:lime; // lime color is added.
+
 			}
 			
 			card card-primary mb-2{
-				background-color: white;
+				background-color: gray; // changing of color to gray.
 			}
 		</style>
 		

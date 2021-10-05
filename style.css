@@ -1,12 +1,12 @@
 
 
 body {
-  background: ghostwhite;
+  background: silver; // changing the color to silver.
 }
 form {
-  width: 70%;
-  margin: 70px auto;
-  background: yellow;
+  width: 30%; // changed the width
+  margin: 60px auto; // changed the margin
+  background: silver; // changed the color
   padding: 60px 120px 80px 120px;
   text-align: center;
   -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
@@ -49,7 +49,7 @@ label {
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  background: black;
+  background: silver; // silver is lighter than the black, so it will suit better.
   transition: ease .6s;
 }
 
@@ -73,7 +73,7 @@ button {
   cursor: pointer;
   transition: ease .3s;
 }
-
+// Using the hover effect for the button.  
 button:hover {
   background: #8BC34A;
   color: #ffffff;

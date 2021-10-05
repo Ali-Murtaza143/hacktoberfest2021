@@ -14,8 +14,8 @@
     <style>
         body {
             margin-top: 80px;
-            background: silver;
-            color: red;
+            background: brown; // adding the brown color for easier readability.
+            color: gray; 
         }
 
         card card-primary mb-2 {
@@ -35,17 +35,19 @@
                 <table class="table table-striped table-hover">
                     <tbody>
                         <tr>
-                            <th>Sr. No.</th>
-                            <th>Student Name</th>
-                            <th>Roll Number</th>
-                            <th>Subject Name</th>
-                            <th>Subject Total</th>
-                            <th>Subject Obtain</th>
-                            <th>Grade</th>
+
+                            <th>Sr. No.</th> // Serial Number
+                            <th>Student Name</th> // You have the add the students name.
+                            <th>Roll Number</th> // You have the add the students roll number.
+                            <th>Subject Name</th> // You have the add the subjects name.
+                            <th>Subject Total</th> // You have the add the students total marks of subject.
+                            <th>Subject Obtain</th> // You have the add the students obtained marks.
+                            <th>Grade</th> // You have the add the students grade.
+
                         </tr>
 
                         <?php
-							include "connectivity.php"; // Using database connection file here
+							include "connectivity.php"; // including the connectivity.php file here.
 							$records = mysqli_query($db,"SELECT  subjects.`subj_id`,subjects.`subj_grade`,subjects.`subj_name`, `subjects`.`subj_total`,`subjects`.`subj_obtain`, `student_information`.`std_name`, student_information.`std_roll_number`
 FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student_information`.`std_id`"); // fetch data from database
 						?>
@@ -68,7 +70,7 @@ FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student
 						?>
                     </tbody>
                 </table>
-                <?php mysqli_close($db); // Close connection ?>
+                <?php mysqli_close($db); // Closing the connection ?>
             </div>
         </div>
     </div>
