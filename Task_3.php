@@ -13,15 +13,11 @@
 	<body>
 		<style>
 			body{
-
-			
-
 				margin-top:60px; // changing the margins top
 				background:lightblue; // changing the color.
 				color:lime; // lime color is added.
 
 			}
-			
 			card card-primary mb-2{
 				background-color: gray; // changing of color to gray.
 			}
@@ -34,14 +30,14 @@
 			</center>
 			<br>
 			<div class="row">
-				<div class="col-8">	
-                   
+				<div class="col-10">	
+           
 						<div class="form-group">
 							<form action="" method="post">
-								<input type="text" class="form-control" id="rollNumber" name="rollNumber" placeholder="Enter Roll Number" data-ng-model = "search">
+								<input type="text" class="form-control" id="rollNumber" name="rNumber" placeholder="Enter Roll Number" data-ng-model = "search">
 
 								<div class="form-group">
-									<button type="submit" onclick="" class="btn btn-primary" name="submit">Search Student</button>
+									<button type="submit" onclick="" class="btn btn-primary" name="button">Search Student</button>
 								</div>
 							</form>
 						</div>
@@ -73,6 +69,7 @@
 							<td><?php echo $data['std_roll_number']; ?></td>
 							<td><?php echo $data['std_section']; ?></td>
 						</tr>
+					
 						<?php
 							}
 						?>
