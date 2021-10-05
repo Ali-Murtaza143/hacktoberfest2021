@@ -43,9 +43,9 @@ label {
 
 .line {
   position: absolute;
-  width: 0%;
+
   height: 2px;
-  top: 0px;
+
   left: 50%;
   transform: translateX(-50%);
   background: silver; // silver is lighter than the black, so it will suit better.
@@ -62,14 +62,14 @@ label {
 
 button {
   display: inline-block;
-  padding: 12px 24px;
-  background: rgb(220,220,220);
+  padding: 10px 20px;
+  background: rgb(200,200,200);
   font-weight: bold;
   color: rgb(120,120,120);
 
   border-radius: 3px;
   cursor: pointer;
-  transition: ease .3s;
+  transition: ease .5s;
 }
 // Using the hover effect for the button.  
 button:hover {
