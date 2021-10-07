@@ -25,6 +25,13 @@
                 <div class="line"></div>
             </div>
         </label>
+		 <label>
+
+            <input type="text" class="input" name="department" placeholder="ENTER YOUR DEPARTMENT">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </label>
         <label>
 
             <input type="text" class="input" name="rNumber" placeholder="ENTER YOUR ROLL no">
@@ -32,6 +39,7 @@
                 <div class="line"></div>
             </div>
         </label>
+		
         <label>
 
             <input type="text" class="input" name="section" placeholder="ENTER SECTION">
@@ -50,9 +58,9 @@
 			$fname = $_POST['name'];
 			$rNumber = $_POST['rollNumber'];
 			$section= $_POST['section'];
-			
-			
-			$insert = mysqli_query($db,"INSERT INTO std_info (std_name, std_roll_number ,std_section) VALUES ('$fname','$rNumber','$section')");
+			$department= $_POST['department'];
+					
+			$insert = mysqli_query($db,"INSERT INTO std_info (std_name,std_Dept, std_roll_number ,std_section) VALUES ('$fname','$department'$rNumber','$section')");
 
 			if(!$insert){
 				echo ("Error occured during inserting data: ".$db->error());
