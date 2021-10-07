@@ -10,7 +10,8 @@
 		<script src="script.js"></script>
 	</head>
 	
-	<body>
+	<body>                         
+		                                         <!--CSS code goes here -->
 		<style>
 			body{
 				margin-top:60px; // changing the margins top
@@ -22,7 +23,7 @@
 				background-color: gray; // changing of color to gray.
 			}
 		</style>
-		
+		                                                 <!--HTML code goes here -->
 		<div class="container-fluid"> 
 			<center>
 				<h1>Student Details</h1>
@@ -34,7 +35,7 @@
            
 						<div class="form-group">
 							<form action="" method="post">
-								<input type="text" class="form-control" id="rollNumber" name="rNumber" placeholder="Enter Roll Number" data-ng-model = "search">
+								<input type="text" class="form-control" id="rollNumber" name="rNumber" placeholder="Enter Your  Roll Number" data-ng-model = "search">
 
 								<div class="form-group">
 									<button type="submit" onclick="" class="btn btn-primary" name="button">Search Student</button>
@@ -49,7 +50,7 @@
 							<th>Roll No.</th>
 							<th>Section</th>
 						</tr> 
-						
+                                                             <!--PHP code goes here -->
 						<?php
 							
 							include "connectivity.php"; // Using database connection file here
@@ -58,7 +59,7 @@
 								$rollNumber = $_POST['rollNumber'];
 								$records = mysqli_query($db,"select * from student_information where std_roll_number='$rollNumber'"); // fetch data from database
 						?>
-						
+                                                        <!-- 	Display the data -->
 						<?php      
 							while($data = mysqli_fetch_array($records)){
 						?>
