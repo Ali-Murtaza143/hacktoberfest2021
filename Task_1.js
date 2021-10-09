@@ -7,9 +7,14 @@ $(document).ready(function(){ // This is the ready function
   $(".input").focusout(function(){ // taking the input
     if ($(this).val() == '') {
       $(this).parent().find(".label-txt").removeClass('label-active');
-      console.log("This is JavaScript, pulled by Shahzain Ahmed");
+      console.log("This is JavaScript"); // print statements
       console.log("Work in progress!"); // print statements
-      console.log("New pull requests being held at Web Engineering Labs");
+    
+       console.log("hacktoberfest"); // print statements
+      console.log("hacktoberfest"); // print statements
+      console.log("New pull requests being held at Web Engineering Labs");// print statements
+      
+  
     };
   });
 
