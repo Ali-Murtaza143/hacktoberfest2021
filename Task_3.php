@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Student portal</title>
+		<title>Student Portal</title>
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -13,13 +13,13 @@
 	<body>
 		<style>
 			body{
-				margin-top:70px;
-				background:gray;
+				margin-top:80px;
+				background:silver;
 				color:yellow;
 			}
 			
 			card card-primary mb-2{
-				background-color: blue;
+				background-color: white;
 			}
 		</style>
 		
