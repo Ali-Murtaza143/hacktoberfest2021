@@ -1,40 +1,39 @@
 <html>
 
 <head>
-    <title>Add Records in Database</title> // This goes for the title
+    <title>Add Records in Database</title> 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="style.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+
 </head>
- 		<!------ This is the <body> tag, all the code which is supposed to go in Body tag, comes here ---------->
+ 	
 <body>
 
-    <center>
         <br>
-        <h1>Fill your Data</h1>
+        <h2>Fill your Data</h2>
         <hr>  </hr>
-    </center>
+ 
 
 	<form action="" method="post"> // Using the POST method here, instead of GET method.
 
         <label>
-            <input type="text" class="input" name="fname" placeholder="ENTER YOUR FULL NAME">
+            <input type="text" class="input" name="name" placeholder="ENTER YOUR FULL NAME">
             <div class="line-box">
                 <div class="line"></div>
             </div>
         </label>
 		 <label>
 
-            <input type="text" class="input" name="department" placeholder="ENTER YOUR DEPARTMENT">
+            <input type="text" class="input" name="dept" placeholder="ENTER YOUR DEPARTMENT">
             <div class="line-box">
                 <div class="line"></div>
             </div>
         </label>
         <label>
 
-            <input type="text" class="input" name="rNumber" placeholder="ENTER YOUR ROLL no">
+            <input type="text" class="input" name="rollnumber" placeholder="ENTER YOUR ROLL no">
             <div class="line-box">
                 <div class="line"></div>
             </div>
