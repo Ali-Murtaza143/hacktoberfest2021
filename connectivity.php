@@ -3,6 +3,6 @@
 
     if(!$db)
     {
-        die("Connection failed: " . mysqli_connect_error());
+        die("Connection / database error " . mysqli_connect_error());
     }
 ?> 

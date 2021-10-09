@@ -11,11 +11,12 @@
 </head>
 
 <body>
+       <!-- 	styling -->
     <style>
         body {
             margin-top: 70px;
-            background: gray;
-            color: black;
+            background: blue; // adding the blue color.
+            color: #fff;
         }
 
         card card-primary mb-2 {
@@ -29,23 +30,25 @@
             <center>Student Details</center>
         </h1>
         <div class="row">
-            <div class="col-8">
+            <div class="col-10">
 
 
                 <table class="table table-striped table-hover">
                     <tbody>
                         <tr>
-                            <th>Sr.No</th>
-                            <th>Student Name</th>
-                            <th>Roll Number</th>
-                            <th>Subject Name</th>
-                            <th>Subject Total</th>
-                            <th>Subject Obtain</th>
-                            <th>Grade</th>
-                        </tr>
 
+                            <th>Sr. No.</th>
+                            <th>Student Name</th>
+                            <th>Roll Number</th> 
+                            <th>Subject Name</th> 
+                            <th>Subject Total</th>
+                            <th>Subject Obtain</th> 
+                            <th>Grade</th> 
+
+                        </tr>
+                                                  <!--      PHP code goes here -->
                         <?php
-							include "connectivity.php"; // Using database connection file here
+							include "connectivity.php"; // including the connectivity.php file here.
 							$records = mysqli_query($db,"SELECT  subjects.`subj_id`,subjects.`subj_grade`,subjects.`subj_name`, `subjects`.`subj_total`,`subjects`.`subj_obtain`, `student_information`.`std_name`, student_information.`std_roll_number`
 FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student_information`.`std_id`"); // fetch data from database
 						?>
@@ -53,7 +56,9 @@ FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student
                         <?php      
                             while($data = mysqli_fetch_array($records)){
 						?>
-
+      
+                              <!--    Displaying the data -->
+			    
                         <tr data-ng-repeat="item in data | filter:search">
                             <td><?php echo $data['subj_id']; ?></td>
                             <td><?php echo $data['std_name']; ?></td>
@@ -68,10 +73,11 @@ FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student
 						?>
                     </tbody>
                 </table>
-                <?php mysqli_close($db); // Close connection ?>
+                <?php mysqli_close($db); // Closing the connection ?>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

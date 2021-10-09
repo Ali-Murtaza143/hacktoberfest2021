@@ -1,22 +1,19 @@
 
 
 body {
-  background: floralwhite;
+  background:rgb(221, 92, 221); 
+  /* changing the color to purple */
 }
 form {
-  width: 60%;
-  margin: 60px auto;
-  background: orange;
+  width: 30%; // changed the width
+  margin: 60px auto; // changed the margin
+  background: rgb(233, 232, 187); // changed the color
   padding: 60px 120px 80px 120px;
   text-align: center;
   -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
   box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
 }
-label {
-  display: block;
-  position: relative;
-  margin: 40px 0px;
-}
+
 .label-txt {
   position: absolute;
   top: -1.6em;
@@ -28,11 +25,10 @@ label {
   transition: ease .3s;
 }
 .input {
-  width: 100%;
+  width:  130%; /*increasing width that placeholder should be visible  */
   padding: 10px;
   background: transparent;
-  border: none;
-  outline: none;
+
 }
 
 .line-box {
@@ -44,18 +40,15 @@ label {
 
 .line {
   position: absolute;
-  width: 0%;
+
   height: 2px;
-  top: 0px;
+
   left: 50%;
   transform: translateX(-50%);
-  background: black;
+  background: silver; // silver is lighter than the black, so it will suit better.
   transition: ease .6s;
 }
 
-.input:focus + .line-box .line {
-  width: 100%;
-}
 
 .label-active {
   top: -3em;
@@ -63,18 +56,13 @@ label {
 
 button {
   display: inline-block;
-  padding: 12px 24px;
-  background: rgb(220,220,220);
+  padding: 10px 20px;
+  background: rgb(200,200,200);
   font-weight: bold;
-  color: rgb(120,120,120);
-  border: none;
-  outline: none;
+  color: rgb(51, 45, 45); /*changed color to black */
+
   border-radius: 3px;
   cursor: pointer;
-  transition: ease .3s;
+  transition: ease .5s;
 }
 
-button:hover {
-  background: #8BC34A;
-  color: #ffffff;
-}
