@@ -13,11 +13,7 @@ form {
   -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
   box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
 }
-label {
-  display: block;
-  position: relative;
-  margin: 40px 0px;
-}
+
 .label-txt {
   position: absolute;
   top: -1.6em;
@@ -53,9 +49,6 @@ label {
   transition: ease .6s;
 }
 
-.input:focus + .line-box .line {
-  width: 100%;
-}
 
 .label-active {
   top: -3em;
@@ -72,8 +65,4 @@ button {
   cursor: pointer;
   transition: ease .5s;
 }
-// Using the hover effect for the button.  
-button:hover {
-  background: #8BC34A;
-  color: #ffffff;
-}
+
