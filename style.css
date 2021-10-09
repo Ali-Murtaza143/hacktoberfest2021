@@ -1,10 +1,10 @@
 
 
 body {
-  background: silver; // changing the color to silver.
+  background: yellow; // changing the color to silver.
 }
 form {
-  width: 30%; // changed the width
+  width:50%; // changed the width
   margin: 60px auto; // changed the margin
   background: silver; // changed the color
   padding: 60px 120px 80px 120px;
@@ -22,13 +22,13 @@ label {
   top: -1.6em;
   padding: 10px;
   font-family: sans-serif;
-  font-size: .8em;
+  font-size: .6em;
   letter-spacing: 1px;
-  color: rgba(248, 0, 95, 0.973);
+  color: rgba(258, 0, 95, 0.973);
   transition: ease .3s;
 }
 .input {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background: transparent;
 
@@ -36,7 +36,7 @@ label {
 
 .line-box {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 2px;
   background: #BCBCBC;
 }
@@ -44,7 +44,7 @@ label {
 .line {
   position: absolute;
 
-  height: 2px;
+  height: 3px;
 
   left: 50%;
   transform: translateX(-50%);
@@ -57,15 +57,15 @@ label {
 }
 
 .label-active {
-  top: -3em;
+  top: -2em;
 }
 
 button {
   display: inline-block;
   padding: 10px 20px;
-  background: rgb(200,200,200);
+  background: rgb(60,60,60);
   font-weight: bold;
-  color: rgb(120,120,120);
+  color: rgb(120,60,120);
 
   border-radius: 3px;
   cursor: pointer;
@@ -73,6 +73,6 @@ button {
 }
 // Using the hover effect for the button.  
 button:hover {
-  background: #8BC34A;
-  color: #ffffff;
+  background: blue;
+  color: red;
 }
