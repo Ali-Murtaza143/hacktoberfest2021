@@ -1,5 +1,5 @@
 <?php  
-    $con = mysqli_connect("localhost","root","","DatabaseName");
+    $db = mysqli_connect("localhost","root","","DatabaseName");
 
     if(!$db)
     {
