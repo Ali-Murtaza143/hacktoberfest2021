@@ -53,13 +53,14 @@
 						<?php
 							
 							include "connectivity.php"; // Using database connection file here
-							
+							$records = null;
 							if(isset($_POST['submit'])){
 								$rollNumber = $_POST['rollNumber'];
-								$records = mysqli_query($db,"select * from student_information where std_roll_number='$rollNumber'"); // fetch data from database
+								$records = mysqli_query($con,"select * from student_information where std_roll_number='$rollNumber'"); // fetch data from database
 						?>
 						
-						<?php      
+						<?php   
+							if($records != null){
 							while($data = mysqli_fetch_array($records)){
 						?>
 						
@@ -71,15 +72,21 @@
 						</tr>
 					
 						<?php
-							}
+							}}
+							else{
 						?>
+						<tr >
+							<td>Record does not exist</td>
+							
+						</tr>
+						<?php } ?>
 					</tbody>
 				</table>
 				
 				<?php
 				}
 				?>	
-				<?php mysqli_close($db); // Close connection ?>
+				<?php mysqli_close($con); // Close connection ?>
 				</div>
 			</div>
 		</div>
