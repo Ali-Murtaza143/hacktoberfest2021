@@ -48,11 +48,12 @@
 
                         <?php
 							include "connectivity.php"; // including the connectivity.php file here.
-							$records = mysqli_query($db,"SELECT  subjects.`subj_id`,subjects.`subj_grade`,subjects.`subj_name`, `subjects`.`subj_total`,`subjects`.`subj_obtain`, `student_information`.`std_name`, student_information.`std_roll_number`
+			    				$records = null;
+							$records = mysqli_query($con,"SELECT  subjects.`subj_id`,subjects.`subj_grade`,subjects.`subj_name`, `subjects`.`subj_total`,`subjects`.`subj_obtain`, `student_information`.`std_name`, student_information.`std_roll_number`
 FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student_information`.`std_id`"); // fetch data from database
 						?>
 
-                        <?php      
+                        <?php   if($records != null){   
                             while($data = mysqli_fetch_array($records)){
 						?>
 
@@ -66,11 +67,14 @@ FROM `subjects` INNER JOIN `student_information` ON `subjects`.`std_id`=`student
                             <td><?php echo $data['subj_grade']; ?></td>
                         </tr>
                         <?php
-							}
+							}}
+			    else{
 						?>
+			    <tr><td>Record does not exist</td></tr>
+			    <?php } ?>
                     </tbody>
                 </table>
-                <?php mysqli_close($db); // Closing the connection ?>
+                <?php mysqli_close($con); // Closing the connection ?>
             </div>
         </div>
     </div>
