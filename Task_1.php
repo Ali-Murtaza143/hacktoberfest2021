@@ -67,23 +67,23 @@
 	   include "connectivity.php";
 	
 		if(isset($_POST['submit'])){
-     
-			$fname = $_POST['name'];
-			$rNumber = $_POST['rollNumber'];
-			$section= $_POST['section'];
+   			// Ternary Syntax for null check --> (condition) ? (on true) : (on false)
+			$fname = isset($_POST['name']) ? $_POST['name'] : '';
+			$rNumber = isset($_POST['rollNumber']) ? $_POST['rollNumber'] : '';
+			$section= isset($_POST['section']) ? $_POST['section'] : '';
 			
 			
-			$insert = mysqli_query($db,"INSERT INTO std_info (std_name, std_roll_number ,std_section) VALUES ('$fname','$rNumber','$section')");
+			$insert = mysqli_query($con,"INSERT INTO std_info (std_name, std_roll_number ,std_section) VALUES ('$fname','$rNumber','$section')");
 
 			if(!$insert){
-				echo ("Error occured during inserting data: ".$db->error());
+				echo ("Error occured during inserting data: ".$con->error());
 			}else{
 	
 				echo "Successfully done.";// printing the records being successfully addeed.
 				
 			}
         }
-	   mysqli_close($db); // Closing the connection
+	   mysqli_close($con); // Closing the connection
     ?>
 
     <script src="Task_1.js"></script>
